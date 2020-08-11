@@ -206,4 +206,5 @@ def main(args):
 
 if __name__ == '__main__':
   args = arg_parser()
+  print(args)
   main(args)
