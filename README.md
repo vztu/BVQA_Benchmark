@@ -8,7 +8,7 @@ A performance benchmark for blind video quality assessment (BVQA) models on user
 
 ## Usage (feature-based model only)
 
-Compute feature matrix on a given dataset and put it in `data/` folder, with MOS array (We have provided the MOS arrays of three UGC datasets).
+Compute feature matrix on a given dataset and put it in `data/` folder, with MOS array stored in the same order (We have provided the MOS arrays of three UGC datasets). The code evaluates the extracted features through 100 iterations of train-test splits and returns the median (std) SRCC/KRCC/PLCC/RMSE performances. Note that it is not applicable for deep learning based models.
 
 ##### Run demo (BRISUQE x KoNViD-1k)
 ```
@@ -17,7 +17,7 @@ $ python src/evaluate_bvqa_features.py
 
 ##### Custom usage
 ```
-$ python evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
+$ python src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
                                    [--dataset_name DATASET_NAME]
                                    [--feature_file FEATURE_FILE]
                                    [--mos_file MOS_FILE] [--out_file OUT_FILE]
