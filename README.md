@@ -2,7 +2,7 @@
 Performance benchmarks for blind video quality assessment (BVQA) models
 
 
-# Results
+## Results
 The median SRCC (std SRCC) of 100 repititions of different methods on different datasets.
 
 |    Methods   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         |
@@ -41,3 +41,16 @@ The median PLCC (std PLCC) of 100 repititions of different methods on different 
 | V-BLIINDS    | 0.7037 (0.0301)   | 0.7178 (0.0500)     | 0.5551 (0.0465) |
 | TLVQM        | 0.7688 (0.0238)  | **0.8025 (0.0360)**     | 0.6590 (0.0302) |
 | VIDEVAL      | **0.7803 (0.0223)** | **0.7514 (0.0420)**  | **0.7733 (0.0257)** |
+
+## Citation
+
+If you use this code for your research, please cite our papers.
+
+```
+@article{tu2020ugc,
+  title={UGC-VQA: Benchmarking Blind Video Quality Assessment for User Generated Content},
+  author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
+  journal={arXiv preprint arXiv:2005.14354},
+  year={2020}
+}
+```
