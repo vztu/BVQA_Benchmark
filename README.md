@@ -1,6 +1,56 @@
 # BVQA_Benchmark
-Performance benchmarks for blind video quality assessment (BVQA) models
+A performance benchmark for blind video quality assessment (BVQA) models on user-generated databases, for the UGC-VQA problem studied in the paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
 
+## Pre-requisites
+
+- \>= python 3.6.7
+- sklearn
+
+## Usage (feature-based model only)
+
+Compute feature matrix on a given dataset and put it in `data/` folder, with MOS array (We have provided the MOS arrays of three UGC datasets).
+
+##### Run demo (BRISUQE x KoNViD-1k)
+```
+$ python src/evaluate_bvqa_features.py
+```
+
+##### Custom usage
+```
+$ python evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
+                                   [--dataset_name DATASET_NAME]
+                                   [--feature_file FEATURE_FILE]
+                                   [--mos_file MOS_FILE] [--out_file OUT_FILE]
+                                   [--color_only] [--log_short] [--use_parallel]
+                                   [--num_iterations NUM_ITERATIONS]
+                                   [--max_thread_count MAX_THREAD_COUNT]
+```
+
+## UGC-VQA Datasets
+
+| BVQA Dataset | Download | Paper |
+|:----:|:----:|:----:|
+| **KoNViD-1k (2017)** |  [KoNViD-1k](http://database.mmsp-kn.de/konvid-1k-database.html)  | [Hosu et al. QoMEX'17](https://datasets.vqa.mmsp-kn.de/archives/papers/Hosu-Konvid-1k.pdf)
+| **LIVE-VQC (2018)** |  [LIVE-VQC](https://live.ece.utexas.edu/research/LIVEVQC/index.html)  | [Sinno et al. TIP'19](https://arxiv.org/pdf/1803.01761.pdf)
+| **YouTube-UGC (2019)** | [YouTube-UGC](https://media.withyoutube.com/) | [Wang et al. MMSP'19](https://arxiv.org/abs/1904.06457)
+
+
+## Evaluated BIQA/BVQA Models
+
+|    Methods   | Download            | Paper             |
+|:------------:|:-------------------:|:-------------------:|
+|  BRISQUE    | [BRISQUE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'12](https://www.live.ece.utexas.edu/publications/2012/TIP%20BRISQUE.pdf) |
+|  NIQE       | [NIQE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'13](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.299.1429&rep=rep1&type=pdf)
+| ILNIQE      | [ILNIQE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Zhang et al. TIP'15](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.723.342&rep=rep1&type=pdf)
+| GM-LOG      | [GM-LOG](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Xue et al. TIP'14](https://live.ece.utexas.edu/publications/2014/BIQAUsingGM-LoG.pdf)
+| HIGRADE     | [HIGRADE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Kundu et al. TIP'17](https://ieeexplore.ieee.org/abstract/document/7885070)
+| FRIQUEE     | [FRIQUEE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Ghadiyaram et al. JoV'17](https://jov.arvojournals.org/article.aspx?articleid=2599945)
+| CORNIA      | [BIQC_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Ye et al. CVPR'12](https://ieeexplore.ieee.org/abstract/document/6247789)
+| HOSA        | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Xu et al. TIP'16](https://ieeexplore.ieee.org/abstract/document/7501619)
+| VIIDEO      | [VIIDEO](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'16](https://utw10503.utweb.utexas.edu/publications/2016/07332944.pdf)
+| V-BLIINDS   | [V-BLIINDS](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Saad et al. TIP'14](https://www.live.ece.utexas.edu/publications/2014/VideoBLIINDS.pdf)
+| TLVQM       | [nr-vqa-consumervideo](https://github.com/jarikorhonen/nr-vqa-consumervideo) | [Korhenen et al. TIP'19](https://ieeexplore.ieee.org/document/8742797)
+| VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
 
 ## Results
 The median SRCC (std SRCC) of 100 repititions of different methods on different datasets.
@@ -54,3 +104,7 @@ If you use this code for your research, please cite our papers.
   year={2020}
 }
 ```
+
+## Contact
+
+Zhengzhong Tu, `zhengzhong.tu@utexas.edu`
