@@ -45,11 +45,13 @@ $ python src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | GM-LOG      | [GM-LOG](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Xue et al. TIP'14](https://live.ece.utexas.edu/publications/2014/BIQAUsingGM-LoG.pdf)
 | HIGRADE     | [HIGRADE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Kundu et al. TIP'17](https://ieeexplore.ieee.org/abstract/document/7885070)
 | FRIQUEE     | [FRIQUEE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Ghadiyaram et al. JoV'17](https://jov.arvojournals.org/article.aspx?articleid=2599945)
-| CORNIA      | [BIQC_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Ye et al. CVPR'12](https://ieeexplore.ieee.org/abstract/document/6247789)
+| CORNIA      | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Ye et al. CVPR'12](https://ieeexplore.ieee.org/abstract/document/6247789)
 | HOSA        | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Xu et al. TIP'16](https://ieeexplore.ieee.org/abstract/document/7501619)
 | VIIDEO      | [VIIDEO](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'16](https://utw10503.utweb.utexas.edu/publications/2016/07332944.pdf)
 | V-BLIINDS   | [V-BLIINDS](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Saad et al. TIP'14](https://www.live.ece.utexas.edu/publications/2014/VideoBLIINDS.pdf)
 | TLVQM       | [nr-vqa-consumervideo](https://github.com/jarikorhonen/nr-vqa-consumervideo) | [Korhenen et al. TIP'19](https://ieeexplore.ieee.org/document/8742797)
+| VSFA        | [VSFA](https://github.com/lidq92/VSFA)  | [Li et al. MM'19](https://dl.acm.org/doi/abs/10.1145/3343031.3351028)
+| NSTSS       | [NRVQA-NSTSS](https://github.com/lfovia/NRVQA-NSTSS) | [Dendi et al. TIP'20](https://ieeexplore.ieee.org/abstract/document/9059006)
 | VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
 
 ## Results
@@ -71,6 +73,8 @@ The median SRCC (std SRCC) of 100 repititions of different methods on different 
 | V-BLIINDS    | 0.7101 (0.0314)  | **0.6939 (0.0502)**     | 0.5590 (0.0496) |
 | TLVQM        | 0.7729 (0.0242)  | **0.7988 (0.0365)**     | 0.6693 (0.0306) |
 | VIDEVAL      | **0.7832 (0.0216)** | **0.7522 (0.0390)**  | **0.7787 (0.0254)** |
+| VSFA | 0.755 (0.025) | - | - |
+| NSTSS | 0.6417 | - | - | 
 
 
 The median PLCC (std PLCC) of 100 repititions of different methods on different UGC-VQA datasets.
@@ -91,6 +95,8 @@ The median PLCC (std PLCC) of 100 repititions of different methods on different 
 | V-BLIINDS    | 0.7037 (0.0301)   | 0.7178 (0.0500)     | 0.5551 (0.0465) |
 | TLVQM        | 0.7688 (0.0238)  | **0.8025 (0.0360)**     | 0.6590 (0.0302) |
 | VIDEVAL      | **0.7803 (0.0223)** | **0.7514 (0.0420)**  | **0.7733 (0.0257)** |
+| VSFA | 0.744 (0.029) | - | - |
+| NSTSS | 0.6531 | - | - | 
 
 ## Citation
 
