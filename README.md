@@ -3,7 +3,7 @@ A performance benchmark for blind video quality assessment (BVQA) models on user
 
 
 ## Contributing
-Please feel free to send me [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email (zh engzhong.tu@utexas.edu) to add links or new results.
+Please feel free to send me [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email (zhengzhong.tu@utexas.edu) to add links or new results.
 
 ## Pre-requisites
 
