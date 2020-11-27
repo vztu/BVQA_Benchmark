@@ -1,6 +1,10 @@
 # BVQA_Benchmark
 A performance benchmark for blind video quality assessment (BVQA) models on user-generated databases, for the UGC-VQA problem studied in the paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
 
+
+## Contributing
+Please feel free to send me [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email (zh engzhong.tu@utexas.edu) to add links or new results.
+
 ## Pre-requisites
 
 - python3
@@ -8,16 +12,16 @@ A performance benchmark for blind video quality assessment (BVQA) models on user
 
 ## Usage (feature-based model only)
 
-Compute feature matrix on a given dataset and put it in `data/` folder, with MOS array stored in the same order (We have provided the MOS arrays of three UGC datasets). The code evaluates the extracted features through 100 iterations of train-test splits and returns the median (std) SRCC/KRCC/PLCC/RMSE performances. Note that it is not applicable for deep learning based models.
+Extract features in the form of NxM matrix (N:#samples, M:#features) on a given VQA dataset and save it in `data/` directory. Let metadata file be stored in the same folder with MOSs in the same order as your feature matrix (We have already provided the MOS arrays of three UGC datasets). The `evaluate_bvqa_features.py` evaluates the extracted features via 100 random train-test splits and reports the median (std) SRCC/KRCC/PLCC/RMSE performances. Note that it is not applicable to deep learning models.
 
-##### Run demo (BRISUQE x KoNViD-1k)
+##### Demo evaluations (BRISUQE on KoNViD-1k)
 ```
-$ python src/evaluate_bvqa_features.py
+$ python3 src/evaluate_bvqa_features.py
 ```
 
-##### Custom usage
+##### Custom usage with your own model on given dataset
 ```
-$ python src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
+$ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
                                    [--dataset_name DATASET_NAME]
                                    [--feature_file FEATURE_FILE]
                                    [--mos_file MOS_FILE] [--out_file OUT_FILE]
