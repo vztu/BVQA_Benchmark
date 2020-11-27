@@ -37,7 +37,7 @@ $ python src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 
 ## Evaluated BIQA/BVQA Models
 
-|    Methods   | Download            | Paper             |
+|    Model   | Download            | Paper             |
 |:------------:|:-------------------:|:-------------------:|
 |  BRISQUE    | [BRISQUE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'12](https://www.live.ece.utexas.edu/publications/2012/TIP%20BRISQUE.pdf) |
 |  NIQE       | [NIQE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'13](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.299.1429&rep=rep1&type=pdf)
@@ -56,8 +56,8 @@ $ python src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | NSTSS       | [NRVQA-NSTSS](https://github.com/lfovia/NRVQA-NSTSS) | [Dendi et al. TIP'20](https://ieeexplore.ieee.org/abstract/document/9059006)
 | VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
 
-## Results
-The median SRCC (std SRCC) of 100 repititions of different methods on different datasets.
+## Regression Evaluation Results
+Median SRCC (std SRCC) of 100 random train-test (80%-20%) splits.
 
 |    Methods   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         | All-Combined |
 |:------------:|:---------------------:|:--------------------:|:-------------------:|:------------:|
@@ -83,9 +83,9 @@ The median SRCC (std SRCC) of 100 repititions of different methods on different 
 | VIDEVAL+KonCept512 | | | | |
 
 
-The median PLCC (std PLCC) of 100 repititions of different methods on different UGC-VQA datasets.
+The median PLCC (std PLCC) of 100 random train-test (80%-20%) splits.
 
-|    Methods   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         | All-Combined |
+|    Model   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         | All-Combined |
 |:------------:|:---------------------:|:--------------------:|:-------------------:|:------------:|
 | BRISQUE      | 0.6576 (0.0342)  | 0.6380 (0.0632)     | 0.3952 (0.0486) | 0.5861 (0.0272) |
 | NIQE         | 0.5530 (0.0337)  | 0.6286 (0.0512)     | 0.2776 (0.0431) | 0.4773 (0.0287) |
