@@ -151,7 +151,7 @@ The median PLCC (std PLCC) of 100 random train-test (80%-20%) splits.
 
 ## Citation
 
-Should you find this code useful for your research, please cite our papers.
+Should you find this repo useful to your research, we sincerely appreciate it if you cite our papers:
 
 ```
 @article{tu2020ugc,
