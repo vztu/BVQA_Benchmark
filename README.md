@@ -1,25 +1,45 @@
 # BVQA_Benchmark
 A performance benchmark for blind video quality assessment (BVQA) models on user-generated databases, for the UGC-VQA problem studied in the paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
 
+## Contents
+
+- [BVQA_Benchmark](#bvqa_benchmark)
+  - [Contents](#contents)
+  - [Contributing](#contributing)
+  - [Evaluate Your Own Model](#evaluate-your-own-model)
+      - [Pre-requisites](#pre-requisites)
+      - [Demo evaluations (BRISUQE on KoNViD-1k)](#demo-evaluations-brisuqe-on-konvid-1k)
+      - [Custom usage with your own model on given dataset](#custom-usage-with-your-own-model-on-given-dataset)
+  - [UGC-VQA Datasets](#ugc-vqa-datasets)
+  - [BIQA / BVQA Models <a name="biqa-bvqa-model"></a>](#biqa--bvqa-models-)
+      - [BIQA](#biqa)
+      - [BVQA](#bvqa)
+  - [Performance Benchmark](#performance-benchmark)
+    - [Regression Results](#regression-results)
+  - [Citation](#citation)
+  - [Contact](#contact)
+
 
 ## Contributing
 Please feel free to send me [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email (zhengzhong.tu@utexas.edu) to add links or new results.
 
-## Pre-requisites
+
+
+## Evaluate Your Own Model
+
+Extract features in the form of NxM matrix (N:#samples, M:#features) on a given VQA dataset and save it in `data/` directory. Let metadata file be stored in the same folder with MOSs in the same order as your feature matrix (We have already provided the MOS arrays of three UGC datasets). The `evaluate_bvqa_features.py` evaluates the extracted features via 100 random train-test splits and reports the median (std) SRCC/KRCC/PLCC/RMSE performances. Note that it is not applicable to deep learning models (feature-based model only).
+
+#### Pre-requisites
 
 - python3
 - sklearn
 
-## Usage (feature-based model only)
-
-Extract features in the form of NxM matrix (N:#samples, M:#features) on a given VQA dataset and save it in `data/` directory. Let metadata file be stored in the same folder with MOSs in the same order as your feature matrix (We have already provided the MOS arrays of three UGC datasets). The `evaluate_bvqa_features.py` evaluates the extracted features via 100 random train-test splits and reports the median (std) SRCC/KRCC/PLCC/RMSE performances. Note that it is not applicable to deep learning models.
-
-##### Demo evaluations (BRISUQE on KoNViD-1k)
+#### Demo evaluations (BRISUQE on KoNViD-1k)
 ```
 $ python3 src/evaluate_bvqa_features.py
 ```
 
-##### Custom usage with your own model on given dataset
+#### Custom usage with your own model on given dataset
 ```
 $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
                                    [--dataset_name DATASET_NAME]
@@ -39,7 +59,7 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | **YouTube-UGC (2019)** | [YouTube-UGC](https://media.withyoutube.com/) | [Wang et al. MMSP'19](https://arxiv.org/abs/1904.06457)
 
 
-## Evaluated BIQA/BVQA Models
+## BIQA / BVQA Models <a name="biqa-bvqa-model"></a>
 
 #### BIQA
 
@@ -67,7 +87,10 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | NSTSS       | [NRVQA-NSTSS](https://github.com/lfovia/NRVQA-NSTSS) | [Dendi et al. TIP'20](https://ieeexplore.ieee.org/abstract/document/9059006)
 | VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
 
-## Evaluation Results for Regression
+## Performance Benchmark
+
+### Regression Results
+
 Median SRCC (std SRCC) of 100 random train-test (80%-20%) splits.
 
 |    Methods   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         | All-Combined |
@@ -136,6 +159,16 @@ Should you find this code useful for your research, please cite our papers.
   author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
   journal={arXiv preprint arXiv:2005.14354},
   year={2020}
+}
+
+@inproceedings{tu2020comparative,
+  author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},   title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment},
+  year={2020},
+  volume={},
+  number={},
+  pages={141-145},
+  doi={10.1109/ICIP40778.2020.9191169}
 }
 ```
 
