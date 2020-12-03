@@ -41,6 +41,8 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 
 ## Evaluated BIQA/BVQA Models
 
+#### BIQA
+
 |    Model   | Download            | Paper             |
 |:------------:|:-------------------:|:-------------------:|
 |  BRISQUE    | [BRISQUE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'12](https://www.live.ece.utexas.edu/publications/2012/TIP%20BRISQUE.pdf) |
@@ -53,6 +55,11 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | HOSA        | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Xu et al. TIP'16](https://ieeexplore.ieee.org/abstract/document/7501619)
 | KonCept 512 | [koniq](https://github.com/subpic/koniq) | [Hosu et al. TIP'20](https://arxiv.org/abs/1910.06180) |
 | PaQ-2-PiQ   | [PaQ-2-PiQ](https://github.com/baidut/PaQ-2-PiQ) | [Ying et al. CVPR'20](https://arxiv.org/abs/1912.10088) |
+
+#### BVQA
+
+|    Model   | Download            | Paper             |
+|:------------:|:-------------------:|:-------------------:|
 | VIIDEO      | [VIIDEO](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Mittal et al. TIP'16](https://utw10503.utweb.utexas.edu/publications/2016/07332944.pdf)
 | V-BLIINDS   | [V-BLIINDS](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Saad et al. TIP'14](https://www.live.ece.utexas.edu/publications/2014/VideoBLIINDS.pdf)
 | TLVQM       | [nr-vqa-consumervideo](https://github.com/jarikorhonen/nr-vqa-consumervideo) | [Korhenen et al. TIP'19](https://ieeexplore.ieee.org/document/8742797)
