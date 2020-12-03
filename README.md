@@ -67,7 +67,7 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | NSTSS       | [NRVQA-NSTSS](https://github.com/lfovia/NRVQA-NSTSS) | [Dendi et al. TIP'20](https://ieeexplore.ieee.org/abstract/document/9059006)
 | VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
 
-## Regression Evaluation Results
+## Evaluation Results for Regression
 Median SRCC (std SRCC) of 100 random train-test (80%-20%) splits.
 
 |    Methods   | KoNViD-1k             | LIVE-VQC             | YouTube-UGC         | All-Combined |
@@ -91,7 +91,6 @@ Median SRCC (std SRCC) of 100 random train-test (80%-20%) splits.
 | VSFA | 0.755 (0.025) | - | - | - |
 | NSTSS | 0.6417 | - | - | - |
 | VIDEVAL+KonCept512 | 0.8149 (0.0194) | 0.7849 (0.0440) | 0.8083 (0.0232) | 0.8123 (0.0163) |
-
 
 <!-- | VIDEVAL+PaQ-2-PiQ | 0.7844 (0.0213) | 0.7677 (0.0403) | 0.7981 (0.0212) | 0.7962 (0.0163) | -->
 <!-- | VIDEVAL+VGG-19 | 0.7827 (0.0296)   | 0.7274 (0.0489) | 0.7868 (0.0216) | 0.7859 (0.0161) | 
