@@ -162,11 +162,10 @@ Should you find this repo useful to your research, we sincerely appreciate it if
 }
 
 @inproceedings{tu2020comparative,
+  title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment}, 
   author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
-  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},   title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},  
   year={2020},
-  volume={},
-  number={},
   pages={141-145},
   doi={10.1109/ICIP40778.2020.9191169}
 }
