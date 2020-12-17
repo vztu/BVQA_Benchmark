@@ -1,11 +1,19 @@
 # BVQA_Benchmark
-A performance benchmark for blind video quality assessment (BVQA) models on user-generated databases, for the UGC-VQA problem studied in the paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
+
+This is a resource list for blind video quality assessment (BVQA) models on user-generated databases, i.e., the UGC-VQA problem studied in our paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
+
+The following content include datasets, models & codes, performance benchmark and leaderboard. 
+
+**Maintained by:**  [Zhengzhong Tu](mailto:zhengzhong.tu@utexas.edu)
+
+:+1: **Any suggestion or idea is welcomed.** Please see [Contributing](#contributing)
 
 ## Contents
 
 - [BVQA_Benchmark](#bvqa_benchmark)
   - [Contents](#contents)
   - [Contributing](#contributing)
+  - [Citation](#citation)
   - [Evaluate Your Own Model](#evaluate-your-own-model)
       - [Pre-requisites](#pre-requisites)
       - [Demo evaluations (BRISUQE on KoNViD-1k)](#demo-evaluations-brisuqe-on-konvid-1k)
@@ -16,14 +24,33 @@ A performance benchmark for blind video quality assessment (BVQA) models on user
       - [BVQA](#bvqa)
   - [Performance Benchmark](#performance-benchmark)
     - [Regression Results](#regression-results)
-  - [Citation](#citation)
   - [Contact](#contact)
 
 
 ## Contributing
-Please feel free to send me [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email (zhengzhong.tu@utexas.edu) to add links or new results.
+Please feel free to send an [issue](https://github.com/vztu/BVQA_Benchmark/issues) or [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email [me](mailto:zhengzhong.tu@utexas.edu) to add links or new results.
 
+## Citation
 
+Should you find this repo useful to your research, we sincerely appreciate it if you cite our papers:blush::
+
+```
+@article{tu2020ugc,
+  title={UGC-VQA: Benchmarking Blind Video Quality Assessment for User Generated Content},
+  author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
+  journal={arXiv preprint arXiv:2005.14354},
+  year={2020}
+}
+
+@inproceedings{tu2020comparative,
+  title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment}, 
+  author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},  
+  year={2020},
+  pages={141-145},
+  doi={10.1109/ICIP40778.2020.9191169}
+}
+```
 
 ## Evaluate Your Own Model
 
@@ -148,28 +175,6 @@ The median PLCC (std PLCC) of 100 random train-test (80%-20%) splits.
 <!-- | VIDEVAL+PaQ-2-PiQ | 0.7793 (0.0226) | 0.7686 (0.0411) | 0.7941 (0.0224) | 0.7934 (0.0157) | -->
 <!-- | VIDEVAL+VGG-19    | 0.7913 (0.0253)  | 0.7717 (0.0431)  | 0.7847 (0.0212)  | 0.7962 (0.0142) | 
 | VIDEVAL+ResNet-50 | 0.8200 (0.0238)  | 0.7810 (0.0434) | 0.8033 (0.0208)  | 0.8286 (0.0128) |  -->
-
-## Citation
-
-Should you find this repo useful to your research, we sincerely appreciate it if you cite our papers^^:
-
-```
-@article{tu2020ugc,
-  title={UGC-VQA: Benchmarking Blind Video Quality Assessment for User Generated Content},
-  author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
-  journal={arXiv preprint arXiv:2005.14354},
-  year={2020}
-}
-
-@inproceedings{tu2020comparative,
-  title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment}, 
-  author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
-  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},  
-  year={2020},
-  pages={141-145},
-  doi={10.1109/ICIP40778.2020.9191169}
-}
-```
 
 ## Contact
 
