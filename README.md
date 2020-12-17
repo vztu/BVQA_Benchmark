@@ -100,8 +100,8 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | FRIQUEE     | [FRIQUEE](https://live.ece.utexas.edu/research/Quality/index_algorithms.htm) | [Ghadiyaram et al. JoV'17](https://jov.arvojournals.org/article.aspx?articleid=2599945)
 | CORNIA      | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Ye et al. CVPR'12](https://ieeexplore.ieee.org/abstract/document/6247789)
 | HOSA        | [BIQA_Toolbox](https://github.com/HuiZeng/BIQA_Toolbox) | [Xu et al. TIP'16](https://ieeexplore.ieee.org/abstract/document/7501619)
-| KonCept 512 | [koniq](https://github.com/subpic/koniq) | [Hosu et al. TIP'20](https://arxiv.org/abs/1910.06180) |
-| PaQ-2-PiQ   | [PaQ-2-PiQ](https://github.com/baidut/PaQ-2-PiQ) | [Ying et al. CVPR'20](https://arxiv.org/abs/1912.10088) |
+| KonCept 512 | [koniq](https://github.com/subpic/koniq), [koniq-PyTorch](https://github.com/ZhengyuZhao/koniq-PyTorch) | [Hosu et al. TIP'20](https://arxiv.org/abs/1910.06180) |
+| PaQ-2-PiQ   | [PaQ-2-PiQ](https://github.com/baidut/PaQ-2-PiQ), [paq2piq-PyTorch](https://github.com/baidut/paq2piq) | [Ying et al. CVPR'20](https://arxiv.org/abs/1912.10088) |
 
 #### BVQA
 
