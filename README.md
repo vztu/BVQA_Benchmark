@@ -1,6 +1,6 @@
 # BVQA_Benchmark
 
-This is a resource list for blind video quality assessment (BVQA) models on user-generated databases, i.e., the UGC-VQA problem studied in our paper [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354).
+This is a resource list for blind video quality assessment (BVQA) models on user-generated databases, i.e., the UGC-VQA problem studied in our paper [IEEE TIP2021] [UGC-VQA: Benchmarking blind video quality assessment for user generated content](https://arxiv.org/abs/2005.14354). [IEEEXplore](https://ieeexplore.ieee.org/document/9405420)
 
 The following content include datasets, models & codes, performance benchmark and leaderboard. 
 
