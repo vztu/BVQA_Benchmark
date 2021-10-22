@@ -8,6 +8,9 @@ The following content include datasets, models & codes, performance benchmark an
 
 :+1: **Any suggestion or idea is welcomed.** Please see [Contributing](#contributing)
 
+- Updates [10-21-2021] All the features I used in the paper can be downloaded here: [Google Drive](https://drive.google.com/drive/folders/1_HFMO1KflNvlwkLC02ZWkxxiKZtFQqwV?usp=sharing) 
+
+
 ## Contents
 
 - [BVQA_Benchmark](#bvqa_benchmark)
@@ -112,7 +115,11 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | TLVQM       | [nr-vqa-consumervideo](https://github.com/jarikorhonen/nr-vqa-consumervideo) | [Korhenen et al. TIP'19](https://ieeexplore.ieee.org/document/8742797)
 | VSFA        | [VSFA](https://github.com/lidq92/VSFA)  | [Li et al. MM'19](https://dl.acm.org/doi/abs/10.1145/3343031.3351028)
 | NSTSS       | [NRVQA-NSTSS](https://github.com/lfovia/NRVQA-NSTSS) | [Dendi et al. TIP'20](https://ieeexplore.ieee.org/abstract/document/9059006)
-| VIDEVAL     | [VIDEVAL_release](https://github.com/tu184044109/VIDEVAL_release) | [Tu et al. CoRR'20](https://arxiv.org/abs/2005.14354)
+| VIDEVAL     | [VIDEVAL](https://github.com/vztu/VIDEVAL_release) | [Tu et al. TIP'21](https://ieeexplore.ieee.org/document/9405420)
+| MDTVSFA     | [MDTVSFA](https://github.com/lidq92/MDTVSFA) | [Li et al. IJCV'21](https://link.springer.com/article/10.1007/s11263-020-01408-w)
+| RAPIQUE      | [RAPIQUE](https://github.com/vztu/RAPIQUE) | [Tu et al. OJSP'21](https://ieeexplore.ieee.org/document/9463703/)
+| PatchVQ      | [PatchVQ](https://github.com/baidut/PatchVQ) | [Ying et al. CVPR'21](https://arxiv.org/abs/2011.13544) 
+| CoINVQ       | [CoINVQ]()  | [Wang et al. CVPR'21](https://openaccess.thecvf.com/content/CVPR2021/html/Wang_Rich_Features_for_Perceptual_Quality_Assessment_of_UGC_Videos_CVPR_2021_paper.html)
 
 ## Performance Benchmark
 
@@ -141,6 +148,9 @@ Median SRCC (std SRCC) of 100 random train-test (80%-20%) splits.
 | VSFA | 0.755 (0.025) | - | - | - |
 | NSTSS | 0.6417 | - | - | - |
 | VIDEVAL+KonCept512 | 0.8149 (0.0194) | 0.7849 (0.0440) | 0.8083 (0.0232) | 0.8123 (0.0163) |
+| MDTVSFA  | 0.7812 (0.0278)   | 0.7382 (0.0357)  |  -  |  - | 
+| PatchVQ  | 0.791  | 0.827  | - |  - |
+| CoINVQ   | 0.767  | -  | 0.816  | - |
 
 <!-- | VIDEVAL+PaQ-2-PiQ | 0.7844 (0.0213) | 0.7677 (0.0403) | 0.7981 (0.0212) | 0.7962 (0.0163) | -->
 <!-- | VIDEVAL+VGG-19 | 0.7827 (0.0296)   | 0.7274 (0.0489) | 0.7868 (0.0216) | 0.7859 (0.0161) | 
@@ -170,7 +180,9 @@ The median PLCC (std PLCC) of 100 random train-test (80%-20%) splits.
 | VSFA | 0.744 (0.029) | - | - | - |
 | NSTSS | 0.6531 | - | - | - |
 | VIDEVAL+KonCept512 | 0.8169 (0.0179)  | 0.8010 (0.0398) | 0.8028 (0.0234) | 0.8168 (0.0128) |
-
+| MDTVSFA  |  0.7856 (0.0240) | 0.7728 (0.0351)  |  -  |  -  |
+| PatchVQ  | 0.786  | 0.837 | - | - |
+| CoINVQ   | 0.764  | -  | 0.802  | - |
 
 <!-- | VIDEVAL+PaQ-2-PiQ | 0.7793 (0.0226) | 0.7686 (0.0411) | 0.7941 (0.0224) | 0.7934 (0.0157) | -->
 <!-- | VIDEVAL+VGG-19    | 0.7913 (0.0253)  | 0.7717 (0.0431)  | 0.7847 (0.0212)  | 0.7962 (0.0142) | 
