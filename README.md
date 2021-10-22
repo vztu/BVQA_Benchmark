@@ -15,8 +15,6 @@ The following content include datasets, models & codes, performance benchmark an
 
 - [BVQA_Benchmark](#bvqa_benchmark)
   - [Contents](#contents)
-  - [Contributing](#contributing)
-  - [Citation](#citation)
   - [Evaluate Your Own Model](#evaluate-your-own-model)
       - [Pre-requisites](#pre-requisites)
       - [Demo evaluations (BRISUQE on KoNViD-1k)](#demo-evaluations-brisuqe-on-konvid-1k)
@@ -27,33 +25,9 @@ The following content include datasets, models & codes, performance benchmark an
       - [BVQA](#bvqa)
   - [Performance Benchmark](#performance-benchmark)
     - [Regression Results](#regression-results)
-  - [Contact](#contact)
+  - [Contributing](#contributing)
+  - [Citation](#citation)
 
-
-## Contributing
-Please feel free to send an [issue](https://github.com/vztu/BVQA_Benchmark/issues) or [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email [me](mailto:zhengzhong.tu@utexas.edu) to add links or new results.
-
-## Citation
-
-Should you find this repo useful to your research, we sincerely appreciate it if you cite our papers:blush::
-
-```
-@article{tu2020ugc,
-  title={UGC-VQA: Benchmarking Blind Video Quality Assessment for User Generated Content},
-  author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
-  journal={arXiv preprint arXiv:2005.14354},
-  year={2020}
-}
-
-@inproceedings{tu2020comparative,
-  title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment}, 
-  author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
-  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},  
-  year={2020},
-  pages={141-145},
-  doi={10.1109/ICIP40778.2020.9191169}
-}
-```
 
 ## Evaluate Your Own Model
 
@@ -87,6 +61,7 @@ $ python3 src/evaluate_bvqa_features.py [-h] [--model_name MODEL_NAME]
 | **KoNViD-1k (2017)** |  [KoNViD-1k](http://database.mmsp-kn.de/konvid-1k-database.html)  | [Hosu et al. QoMEX'17](https://datasets.vqa.mmsp-kn.de/archives/papers/Hosu-Konvid-1k.pdf)
 | **LIVE-VQC (2018)** |  [LIVE-VQC](https://live.ece.utexas.edu/research/LIVEVQC/index.html)  | [Sinno et al. TIP'19](https://arxiv.org/pdf/1803.01761.pdf)
 | **YouTube-UGC (2019)** | [YouTube-UGC](https://media.withyoutube.com/) | [Wang et al. MMSP'19](https://arxiv.org/abs/1904.06457)
+| **LIVE-FB-LSVQ (2021)** | [LIVE-FB-LSVQ](https://github.com/baidut/PatchVQ) | [Ying et al. CVPR'21](https://arxiv.org/abs/2011.13544)
 
 
 ## BIQA / BVQA Models <a name="biqa-bvqa-model"></a>
@@ -188,6 +163,28 @@ The median PLCC (std PLCC) of 100 random train-test (80%-20%) splits.
 <!-- | VIDEVAL+VGG-19    | 0.7913 (0.0253)  | 0.7717 (0.0431)  | 0.7847 (0.0212)  | 0.7962 (0.0142) | 
 | VIDEVAL+ResNet-50 | 0.8200 (0.0238)  | 0.7810 (0.0434) | 0.8033 (0.0208)  | 0.8286 (0.0128) |  -->
 
-## Contact
 
-Zhengzhong Tu, `zhengzhong.tu@utexas.edu`
+## Contributing
+Please feel free to send an [issue](https://github.com/vztu/BVQA_Benchmark/issues) or [pull requests](https://github.com/vztu/BVQA_Benchmark/pulls) or email [me](mailto:zhengzhong.tu@utexas.edu) to add links or new results.
+
+## Citation
+
+Should you find this repo useful to your research, we sincerely appreciate it if you cite our papers:blush::
+
+```
+@article{tu2020ugc,
+  title={UGC-VQA: Benchmarking Blind Video Quality Assessment for User Generated Content},
+  author={Tu, Zhengzhong and Wang, Yilin and Birkbeck, Neil and Adsumilli, Balu and Bovik, Alan C},
+  journal={arXiv preprint arXiv:2005.14354},
+  year={2020}
+}
+
+@inproceedings{tu2020comparative,
+  title={A Comparative Evaluation Of Temporal Pooling Methods For Blind Video Quality Assessment}, 
+  author={Z. {Tu} and C. -J. {Chen} and L. -H. {Chen} and N. {Birkbeck} and B. {Adsumilli} and A. C. {Bovik}},
+  booktitle={2020 IEEE International Conference on Image Processing (ICIP)},  
+  year={2020},
+  pages={141-145},
+  doi={10.1109/ICIP40778.2020.9191169}
+}
+```
