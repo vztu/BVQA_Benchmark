@@ -8,6 +8,7 @@ The following content include datasets, models & codes, performance benchmark an
 
 :+1: **Any suggestion or idea is welcomed.** Please see [Contributing](#contributing)
 
+- Updates [02-31-2021] Added VQA mainpage at papers-with-code here: [video-quality-assessment](https://paperswithcode.com/task/video-quality-assessment)
 - Updates [10-21-2021] All the features I used in the paper can be downloaded here: [Google Drive](https://drive.google.com/drive/folders/1_HFMO1KflNvlwkLC02ZWkxxiKZtFQqwV?usp=sharing) 
 
 
